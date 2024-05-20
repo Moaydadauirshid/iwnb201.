@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="myFunctions.js"></script>
+    <title>Products Page</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="Appliances.html">Products</a></li>
+            <div class="cart-icon">
+                <a href="#cart">🛒<span id="cart-count">0</span></a>
+            </div>
+        </ul>
+    </nav>
+    <section class="hero-section">
+        <img src="images/ktichen.jpg" alt="Hero Image">
+        <h1>Welcome to the Creative Minds Group</h1>
+    </section>
+    <h2 class="header1">Appliances</h2>
+    <br>
+    <table class="table1">
+        <tr>
+            <th>Product</th>
+            <th>Brand</th>
+            <th>Type</th>
+            <th>Details</th>
+            <th>Volume</th>
+            <th>Price (SYP)</th>
+            <th>Photo</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>Samsung Refrigerator</td>
+            <td>Samsung</td>
+            <td>Two Doors</td>
+            <td>Volume: 800 litres<br>SpaceMax™ Technology<br>Energy saving up to 50%<br>Digital converter<br>Comprehensive cooling</td>
+            <td>800L</td>   
+            <td>6,500,000</td>
+            <td><img src="images/image1.webp" alt=""></td>
+            <td><button onclick="addToCart({ name: 'Samsung Refrigerator', price: 6500000, quantity: 1 })">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>LG Washing Machine</td>
+            <td>LG</td>
+            <td>Front Load, 8 kg</td>
+            <td>Smart Inverter Motor<br>6 Motion DD Technology<br>Energy saving up to 40%<br>Smart Diagnosis</td>
+            <td>8 kg</td>
+            <td>4,000,000</td>
+            <td><img src="images/image2.jpeg" alt=""></td>
+            <td><button onclick="addToCart({ name: 'LG Washing Machine', price: 4000000, quantity: 1 })">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>Sony 4K Smart TV</td>
+            <td>Sony</td>
+            <td>55-inch, OLED</td>
+            <td>4K HDR Processor X1 Extreme<br>Android TV with Google Assistant<br>Dolby Vision and Acoustic Surface Audio+</td>
+            <td>55 inches</td>
+            <td>10,000,000</td>
+            <td><img src="images/image3.jpg" alt=""></td>
+            <td><button onclick="addToCart({ name: 'Sony 4K Smart TV', price: 10000000, quantity: 1 })">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>LG UltraWide Monitor</td>
+            <td>LG</td>
+            <td>34-inch, IPS</td>
+            <td>Quad HD Resolution<br>UltraWide Field of View<br>AMD FreeSync</td>
+            <td>34 inches</td>
+            <td>1,500,000</td>
+            <td><img src="images/image4.jpg" alt=""></td>
+            <td><button onclick="addToCart({ name: 'LG UltraWide Monitor', price: 1500000, quantity: 1 })">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>Dell XPS Laptop</td>
+            <td>Dell</td>
+            <td>15.6-inch, 4K OLED</td>
+            <td>10th Gen Intel Core i7<br>16GB RAM, 512GB SSD<br>NVIDIA GeForce GTX 1650</td>
+            <td>15.6 inches</td>
+            <td>2,800,000</td>
+            <td><img src="images/image5.jpg" alt=""></td>
+            <td><button onclick="addToCart({ name: 'Dell XPS Laptop', price: 2800000, quantity: 1 })">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>Apple iPhone 13</td>
+            <td>Apple</td>
+            <td>6.1-inch, Super Retina XDR</td>
+            <td>A15 Bionic Chip<br>Dual-camera system<br>iOS 15</td>
+            <td>6.1 inches</td>
+            <td>3,500,000</td>
+            <td><img src="images/image6.jpeg" alt=""> </td>
+            <td><button onclick="addToCart({ name: 'Apple iPhone 13', price: 3500000, quantity: 1 })">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>Bose QuietComfort 35 II</td>
+            <td>Bose</td>
+            <td>Over-Ear, Wireless</td>
+            <td>Active Noise Cancellation<br>20-hour battery life<br>Built-in Google Assistant</td>
+            <td>[Not specified]</td>
+            <td>1,200,000</td>
+            <td><img src="images/image8.jpg" alt=""></td>
+            <td><button onclick="addToCart({ name: 'Bose QuietComfort 35 II', price: 1200000, quantity: 1 })">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>Canon EOS R5</td>
+            <td>Canon</td>
+            <td>Full-frame Mirrorless</td>
+            <td>45MP CMOS Sensor<br>8K Video Recording<br>Dual Pixel CMOS AF II</td>
+            <td>[Not specified]</td>
+            <td>5,500,000</td>
+            <td><img src="images/image9.jpeg" alt=""></td>
+            <td><button onclick="addToCart({ name: 'Canon EOS R5', price: 5500000, quantity: 1 })">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>Fitbit Charge 5</td>
+            <td>Fitbit</td>
+            <td>Activity Tracker</td>
+            <td>Advanced Health Metrics<br>Built-in GPS<br>Up to 7-day battery life</td>
+            <td>[Not specified]</td>
+            <td>500,000</td>
+            <td><img src="images/image10.jpg" alt=""></td>
+            <td><button onclick="addToCart({ name: 'Fitbit Charge 5', price: 500000, quantity: 1 })">Add to Cart</button></td>
+        </tr>
+        
+    </table>
+
+    <div id="shopping-cart">
+        <button onclick="cancelCart()">Cancel</button>
+        <button onclick="showBuyForm()">Continue</button>
+    </div>
+
+    <!-- Form for Buy Section (initially hidden) -->
+    <div id="buy-form" style="display: none;">
+        <label for="full-name">الاسم الكامل:</label>
+        <input type="text" id="full-Name" placeholder="أدخل اسمك الكامل" required>
+        <br>
+        <label for="national-number">الرقم الوطني:</label>
+        <input type="text" id="national-number" placeholder="أدخل الرقم الوطني" required>
+        <br>
+        <label for="dob">تاريخ الميلاد:</label>
+        <input type="date" id="date1" required>
+        <br>
+        <label for="mobile-number">رقم الجوال:</label>
+        <input type="text" id="mobile-number" placeholder="أدخل رقم الجوال" required>
+        <br>
+        <label for="email">البريد الإلكتروني:</label>
+        <input type="email" id="email" placeholder="أدخل عنوان البريد الإلكتروني" required>
+        <br>
+        <div id="captcha-container">
+            <label for="captcha">كابتشا:</label>
+            <input type="text" id="captcha" placeholder="أدخل الكابتشا" required>
+            <span id="captcha-challenge"></span>
+        </div>
+        <br>
+        <button onclick="buy()">شراء</button>
+    </div>
+    
+
+</body>
+</html>
